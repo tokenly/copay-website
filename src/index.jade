@@ -6,25 +6,27 @@ block content
     include _includes/main-menu.jade
     .section
       .row
-        .column.large-8.large-offset-2.text-center
-          h1.white.fade-in.text-shadow The Secure, Shared Bitcoin Wallet
+        .column.large-8.large-offset-2
+          h1.white.fade-in.text-shadow Token Pockets
+          h4.white.fade-in.text-shadow A digital wallet that lets you trade in coins - and - tokens.
+          h5.white.fade-in.text-shadow Like money, but with added benefits.
       .row
-        .column.large-8.large-offset-2.text-center
-          h3.white.medium-margin-top-less.fade-in.delay-4.text-shadow Secure your bitcoin with the open source, #[span.has-tip.tip-top.white(data-tooltip aria-haspopup="true" title="hierarchical-deterministic – HD wallets make protecting your bitcoin easier. One backup is all you need to access your bitcoin forever.") HD]&#8209;multisignature wallet from BitPay.
+        .column.large-8.large-offset-2
+          h2.white.medium-margin-top-less.fade-in.delay-4.text-shadow Easy to Use. Secure. And, completely FREE.
           .margin-top-less.fade-in.delay-4
-            a(href="#download").uppercase.bold.white.btn.btn-green.btn-margin.margin-top Get Copay
+            a(href="https://wallet.tokenpockets.com").uppercase.bold.white.btn.btn-blue-solid.btn-margin.margin-top Get Pockets Now
     .bg-gray.border-bottom-gray
       .row.padding-less.text-center
         mixin logos(name, title, url)
           a(href="#{url}" target="blank" alt="#{title}" title="#{title}" cancel-s18n)
             .home-logo.h2.unselectable.grey-hover(style="background-image: url('/images/bw-icons/#{name}.svg'); width: 0.75em; height: 0.75em; margin-right: 0.55em")
-        +logos("apple", "iOS", "https://itunes.apple.com/us/app/copay/id951330296")
-        +logos("google", "Google Play", "https://play.google.com/store/apps/details?id=com.bitpay.copay&hl=en")
-        +logos("windows", "Windows Phone", "http://www.windowsphone.com/en-us/store/app/copay-wallet/4372479b-a064-4d18-8bd3-74a3bdb81c3a")
-        +logos("chrome", "Chrome Extension", "https://chrome.google.com/webstore/detail/copay/cnidaodnidkbaplmghlelgikaiejfhja?hl=en")
-        +logos("osx", "Mac OS X", "https://github.com/bitpay/copay/releases/latest")
-        +logos("microsoft", "Windows", "https://github.com/bitpay/copay/releases/latest")
-        +logos("linux", "Linux", "https://github.com/bitpay/copay/releases/latest")
+        //+logos("apple", "iOS", "https://itunes.apple.com/us/app/copay/id951330296")
+        //+logos("google", "Google Play", "https://play.google.com/store/apps/details?id=com.bitpay.copay&hl=en")
+        //+logos("windows", "Windows Phone", "http://www.windowsphone.com/en-us/store/app/copay-wallet/4372479b-a064-4d18-8bd3-74a3bdb81c3a")
+        +logos("chrome", "Browser Version", "https://wallet.tokenpockets.com")
+        //+logos("osx", "Mac OS X", "https://github.com/bitpay/copay/releases/latest")
+        //+logos("microsoft", "Windows", "https://github.com/bitpay/copay/releases/latest")
+        //+logos("linux", "Linux", "https://github.com/bitpay/copay/releases/latest")
       
       
   .section
@@ -33,9 +35,9 @@ block content
         .icon.h2.background-contain(style="background-image: url('/images/faces-cell-complete.png'); height:15em;")
       .column.large-5
         h2.header__bottom-border__large-left.padding-top Secure, Shared Wallets
-        h5.margin-bottom Copay is a true bitcoin wallet, not an account service. Secure your personal funds with multiple signatures, or just one.
-        p Take security into your own hands and avoid trusting third parties with your savings. Like a joint-checking account, your Copay wallet can have multiple users. To send money, the group approves each transaction.
-        p Manage shared funds with friends and coworkers. Share a wallet with your child and introduce them to bitcoin. Copay makes sharing a wallet simple and secure.
+        h5.margin-bottom Pockets is a true token wallet, not an account service. Secure your personal funds with multiple signatures, or just one.
+        p Take security into your own hands and avoid trusting third parties with your savings. Like a joint-checking account, your Pockets wallet can have multiple users. To send money or tokens, the group approves each transaction.
+        p Manage shared funds with friends and coworkers. Share a wallet with your child and introduce them to tokens. Token Pockets makes sharing a wallet simple and secure.
       .column.large-7.show-for-large-up
         .icon.h2.background-contain
 
@@ -52,8 +54,24 @@ block content
           img.user-checked-phone.check-phone-position3.delay-14.fade-in.wow.animated(src="/images/user-checked-phone.svg")
           img.phone-green-screen.delay-16.fade-in.wow.animated(src="/images/side-phone-screen2.png" s18n-attrs="src" )
           //- Animation ends
-        
+     
+     
   .section.bg-gray
+    .row
+      .column.large-7.hide-for-large-up
+      .column.large-7.show-for-large-up
+          //- Animation starts
+          img.base-phone.fade-in.wow.animated(src="/images/inventory-screen2.png" s18n-attrs="src") 
+      .column.large-5
+        h2.header__bottom-border__large-left.padding-top Inventory Management
+        h5.margin-bottom-less Token Pockets makes it simple to keep your #[em tokenized] perks organized.
+        p Tokens can be used for media access, digital licensing, as collectable badges, represent video game assets and much more. Pockets makes it easy to manage tokens, and tokens make digital experiences more seamless, intuitive and engaging.
+        p Store the tokens you acquire in your Token Pockets wallet "token inventory". You are able to freely send, receive and trade your tokens. More tokens means more perks you can enjoy!
+        p Click on your token to see how many are in the global supply and learn about its details.
+     
+     
+        
+  .section.bg-gray.multi-wallets
     .row
       .column.large-7.hide-for-large-up
         .icon.h2.background-contain(style="background-image: url('/images/multiple-wallets.png'); height:15em;")
@@ -66,41 +84,42 @@ block content
       .column.large-5
         h2.header__bottom-border__large-left.padding-top Multiple Wallets,#[br] One App
         h5.margin-bottom-less No more tedious address management.
-        p The Copay app securely stores multiple, distinct bitcoin wallets, allowing both business and privacy-conscious users to keep funds carefully separated.
-        p Manage personal, business, and testnet wallets easily, all without leaving the app. Copay uses hierarchical-deterministic (HD) wallets, allowing for secure in-app wallet generation and backup.
+        p The Token Pockets app securely stores multiple, distinct, token-enabled bitcoin wallets, allowing both business and privacy-conscious users to keep funds and tokens carefully separated.
+        p Manage personal, business, and testnet wallets easily, all without leaving the app. Pockets uses hierarchical-deterministic (HD) wallets, allowing for secure in-app wallet generation and backup.
 
 
 
-        
   .section
     .row
       .column.large-7.hide-for-large-up
-        .icon.h2.background-contain(style="background-image: url('/images/universal-network.png'); height: 15em;")
+        .icon.h2.background-contain(style="background-image: url('/images/enhanced_token_creation.png'); height:15em;")
       .column.large-5
-        h2.header__bottom-border__large-left.padding-top Secure Payment Verification
-        h5.margin-bottom-less Press that #[code.small.copay-ui-btn.fade-in.delay-6 send] button with confidence.
-        p Copay is one of the first bitcoin wallets to support the full Bitcoin Payment Protocol (BIP 0070-0073). 
-        p When you send money to a Payment Protocol-enabled merchant, Copay securely verifies that your payment will go to the right place.
+        h2.header__bottom-border__large-left.padding-top Enhanced Token Creation
+        h5.margin-bottom Tokens can be used as redeemables or grant access to exclusive content.
+        p Create a token for your business. Tokens can be a great tool for generating social awareness for your business or for exclusivity. Ask us how.
+        p Issue as many or as few tokens as you need depending on what your token is being used for and how many people will use it. If your business grows, your token can grow with it.
+        a(href="https://wallet.tokenpockets.com").uppercase.bold.white.btn.btn-blue-solid.btn-margin.margin-top Create Your First Token
       .column.large-7.show-for-large-up
         .icon.h2.background-contain
-          img.base-map.fade-in.wow.animated(src="/images/dotted-map.png") 
-          img.secpayphone.fade-in.delay-3.wow.animated(src="/images/secure-payment-phone.png" s18n-attrs="src") 
+          img.side-phone.fade-in-right.wow.animated(src="/images/enhanced_token_creation.png" s18n-attrs="src") 
 
 
-  .section.bg-gray.overflow
+
+     
+  .section.bg-gray
     .row
       .column.large-7.hide-for-large-up
-        .icon.h2.background-contain(style="background-image: url('/images/livenet-testnet.png'); height:15em;" s18n-attrs="style")
       .column.large-7.show-for-large-up
           //- Animation starts
-          img.base-map.fade-in(src="/images/livenet-testnet-base.png" s18n-attrs="src") 
-           
-          //- Animation ends
+          img.base-phone.fade-in.wow.animated(src="/images/connecting_to_tokenpass.png" s18n-attrs="src") 
       .column.large-5
-        h2.header__bottom-border__large-left.padding-top Testnet Support for Developers
-        h5.margin-bottom-less The first bitcoin wallet to bring testnet support to both iOS and Windows Phone.
-        p Copay includes native support for the Bitcoin Testnet, perfect for testing new bitcoin applications across multiple platforms.
-        p With multisignature (P2SH) and multiple wallet support, Copay makes it simple for developers to test and demo bitcoin applications without fumbling between other mobile apps. 
+        h2.header__bottom-border__large-left.padding-top Connecting to Tokenpass
+        h5.margin-bottom-less Connect your wallet to your Tokenpass account for access to perks on participating platforms.
+        p In order for you to ride the token super highway, you will need to hook up one of your pockets to your browser using your Tokenpass account.
+        p Once connected, when you are logged in with Tokenpass you will be able to enjoy any perks that tokens in your inventory offer.
+        p To find out what your tokens do, just click on them.
+     
+
 
   .section
     .row
@@ -108,10 +127,10 @@ block content
         .icon.h2.background-contain(style="background-image: url('/images/code-trust.png'); height:15em;" s18n-attrs="style") 
       .column.large-5
         h2.header__bottom-border__large-left.padding-top Open Source,#[br] No Exceptions
-        h5.margin-bottom-less Not only is the Copay app open source, the server is too.
-        p Enterprise and power users can take full control of their finances by deploying their own version of the Copay apps and Bitcore Wallet Service.
+        h5.margin-bottom-less Completely Open Source.
+        p Tokenly has leveraged the open source Copay app by Bitpay to keep your token management experience top notch.
         p Dozens of bitcoin developers have already contributed to Copay, and we're not finished yet. Every part of Copay, wallet and server, is available to be reviewed, improved, and developed by the community.
-        p You can follow along, discuss improvements, and join in on GitHub at #[a(href="https://github.com/bitpay/copay") bitpay/copay] and #[a(href="https://github.com/bitpay/bitcore-wallet-service") bitpay/bitcore-wallet-service].
+        p You can follow along, discuss improvements, and join in on GitHub at #[a(href="https://github.com/tokenly/pockets") tokenly/pockets], #[a(href="https://github.com/bitpay/copay") bitpay/copay] and #[a(href="https://github.com/bitpay/bitcore-wallet-service") bitpay/bitcore-wallet-service].
       .column.large-7.show-for-large-up
         .icon.h2.background-contain
           <!-- OpenSOurce starts -->
@@ -123,54 +142,56 @@ block content
             //- Animation ends
           <!-- OpenSOurce ends -->
   
-  #download.section.bg-dark.text-center
-    h2.white.margin-bottom-less Get the Copay Bitcoin Wallet
+  #download.section.bg-tokenly-blue.text-center
+    h2.white.margin-bottom-less Get Token Pockets
     .row.text-center
-      a(href="https://itunes.apple.com/us/app/copay/id951330296" target="blank" cancel-s18n).white.btn.btn-gray-medium-border.download
-        .icon.left.h2.background-contain(style="background-image: url('/images/icon-applestore.svg'); width: 2em; height: 1em;")
-        .text-left.line-height-less
-          small.gray-medium Find it on the
-          h6.white.margin-none iOS App Store
+      //a(href="https://itunes.apple.com/us/app/copay/id951330296" target="blank" cancel-s18n).white.btn.btn-gray-medium-border.download
+        //.icon.left.h2.background-contain(style="background-image: url('/images/icon-applestore.svg'); width: 2em; height: 1em;")
+        //.text-left.line-height-less
+          //small.gray-medium Find it on the
+          //h6.white.margin-none iOS App Store
           
-      a(href="https://play.google.com/store/apps/details?id=com.bitpay.copay&hl=en" target="blank" cancel-s18n).white.btn.btn-gray-medium-border.download
-        .icon.left.h2.background-contain(style="background-image: url('/images/icon-playstore.svg'); width: 2em; height: 1em;")
-        .text-left.line-height-less
-          small.gray-medium Get it on
-          h6.white.margin-none Google Play
+      //a(href="https://play.google.com/store/apps/details?id=com.bitpay.copay&hl=en" target="blank" cancel-s18n).white.btn.btn-gray-medium-border.download
+        //.icon.left.h2.background-contain(style="background-image: url('/images/icon-playstore.svg'); width: 2em; height: 1em;")
+        //.text-left.line-height-less
+          //small.gray-medium Get it on
+          //h6.white.margin-none Google Play
           
-      a(href="http://www.windowsphone.com/en-us/store/app/copay-wallet/4372479b-a064-4d18-8bd3-74a3bdb81c3a" target="blank" cancel-s18n).white.btn.btn-gray-medium-border.download
-        .icon.left.h2.background-contain(style="background-image: url('/images/icon-winstore.svg'); width: 2em; height: 1em;")
-        .text-left.line-height-less
-          small.gray-medium Download from
-          h6.white.margin-none Windows Store 
+      //a(href="http://www.windowsphone.com/en-us/store/app/copay-wallet/4372479b-a064-4d18-8bd3-74a3bdb81c3a" target="blank" cancel-s18n).white.btn.btn-gray-medium-border.download
+        //.icon.left.h2.background-contain(style="background-image: url('/images/icon-winstore.svg'); width: 2em; height: 1em;")
+        //.text-left.line-height-less
+          //small.gray-medium Download from
+          //h6.white.margin-none Windows Store 
                
-      a(href="https://chrome.google.com/webstore/detail/copay/cnidaodnidkbaplmghlelgikaiejfhja?hl=en" target="blank" cancel-s18n).white.btn.btn-gray-medium-border.download
+      a(href="https://wallet.tokenpockets.com" target="blank" cancel-s18n).white.btn.btn-gray-medium-border.download
         .icon.left.h2.background-contain(style="background-image: url('/images/icon-chrome-app.svg'); width: 2em; height: 1em;")
         .text-left.line-height-less
-          small.gray-medium Get the
-          h6.white.margin-none Chrome App
+          small.gray-medium Use the
+          h6.white.margin-none Browser Version
           
-      a(href="https://github.com/bitpay/copay/releases/latest" target="blank" cancel-s18n).white.btn.btn-gray-medium-border.download
-        .icon.left.h2.background-contain(style="background-image: url('/images/icon-mac-os-x.svg'); width: 2em; height: 1em;")
-        .text-left.line-height-less
-          small.gray-medium Available for
-          h6.white.margin-none Mac OS X
+      //a(href="https://github.com/bitpay/copay/releases/latest" target="blank" cancel-s18n).white.btn.btn-gray-medium-border.download
+        //.icon.left.h2.background-contain(style="background-image: url('/images/icon-mac-os-x.svg'); width: 2em; height: 1em;")
+        //.text-left.line-height-less
+          //small.gray-medium Available for
+          //h6.white.margin-none Mac OS X
 
-      a(href="https://github.com/bitpay/copay/releases/latest" target="blank" cancel-s18n).white.btn.btn-gray-medium-border.download
-        .icon.left.h2.background-contain(style="background-image: url('/images/icon-microsoft.svg'); width: 2em; height: 1em;")
-        .text-left.line-height-less
-          small.gray-medium Download for
-          h6.white.margin-none Windows
+      //a(href="https://github.com/bitpay/copay/releases/latest" target="blank" cancel-s18n).white.btn.btn-gray-medium-border.download
+        //.icon.left.h2.background-contain(style="background-image: url('/images/icon-microsoft.svg'); width: 2em; height: 1em;")
+        //.text-left.line-height-less
+          //small.gray-medium Download for
+          //h6.white.margin-none Windows
 
-      a(href="https://github.com/bitpay/copay/releases/latest" target="blank" cancel-s18n).white.btn.btn-gray-medium-border.download
-        .icon.left.h2.background-contain(style="background-image: url('/images/icon-linux.svg'); width: 2em; height: 1em;")
-        .text-left.line-height-less
-          small.gray-medium Get it for
-          h6.white.margin-none Linux 
-                    
+      //a(href="https://github.com/bitpay/copay/releases/latest" target="blank" cancel-s18n).white.btn.btn-gray-medium-border.download
+        //.icon.left.h2.background-contain(style="background-image: url('/images/icon-linux.svg'); width: 2em; height: 1em;")
+        //.text-left.line-height-less
+          //small.gray-medium Get it for
+          //h6.white.margin-none Linux 
                     
     .margin-top
-      a.border-bottom-light.white(href="https://github.com/bitpay/copay/releases/latest") Download the latest source code from GitHub &rsaquo;
+      p.white Builds for OSX, iOS, Android, Linux and Windows coming soon.
+    
+    .margin-top
+      a.border-bottom-light.white(href="https://github.com/tokenly/pockets/releases/latest") Download the latest source code from GitHub &rsaquo;
   
   .section.bg-gray
     .row
