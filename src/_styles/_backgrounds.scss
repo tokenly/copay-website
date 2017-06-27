@@ -18,6 +18,19 @@
   background-color: #2C3E50;
 }
 
+.bg-tokenly-gray{
+  background-color: #e6e6e6;
+}
+
+.bg-tokenly-dark{
+ background: url('/images/bg2.png') top right no-repeat;
+ background-color: #272a2b;
+ background-size: contain;
+ h1,h2,h3,h4,h5,h6,p,div,span{
+    color: #fff;
+ }
+}
+
 .bg-blue {
   background-color: $blue-dark;
 }
