@@ -89,17 +89,24 @@ block content
 
 
   .section.bg-tokenly-dark
+    a(name="how-tokens-works")
     .row
       .column.large-7.hide-for-large-up
-        .icon.h2.background-contain(style="background-image: url('/images/faces-cell-complete.png'); height:15em;")
+        .icon.h2.background-contain(style="background-image: url('/images/what-is-a-token.png'); height:15em;")
+          div#video-mobile
+            iframe(width="100%" height="200" src="https://www.youtube.com/embed/P5fbsUub7y8" frameborder="0" allowfullscreen)        
       .column.large-5
         h2.header__bottom-border__large-left.padding-top Don't know what a token is or why you should care?
         h5.margin-bottom A blockchain tool you can actually use.
         p The blockchain has made transactions more direct, cheaper, and easier to handle. Tokens are the evolution in this market. Transactions are just as quick, easy and secure as with digital currency, but with added value and versatility.
         p At its core, a token is a gitial represenation of a good or service that can be bought and sold, stored for benefits or traded for other tokens.
-        a(href="#").uppercase.bold.white.btn.btn-blue-solid.btn-margin.margin-top How it Works
+        a#how-it-works(href="#how-tokens-works" title="Play video to learn how tokens works" onclick="playVideo()").uppercase.bold.white.btn.btn-blue-solid.btn-margin.margin-top How it Works
+          i.play-icon
       .column.large-7.show-for-large-up
         .icon.h2.background-contain
+          img.side-phone.fade-in-right.wow.animated(src="/images/what-is-a-token.png" s18n-attrs="src")
+          div#video
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/P5fbsUub7y8" frameborder="0" allowfullscreen)
 
 
   .section

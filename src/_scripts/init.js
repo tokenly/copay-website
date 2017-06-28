@@ -1,3 +1,4 @@
+
 (function() {
   'use strict';
   InstantClick.on('change', function() {
@@ -43,3 +44,4 @@
   }
 
 }());
+

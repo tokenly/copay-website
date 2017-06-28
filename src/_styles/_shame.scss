@@ -22,3 +22,39 @@
     background: url('/images/bg1.png') top left no-repeat;
     background-size: 100%;
 }
+
+.play-icon{
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-style: solid;
+    margin-left: 14px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #ffffff;
+
+}
+
+#how-it-works.btn{
+    box-shadow: 0 1px 12px rgba(146, 194, 243, 0.8);
+    cursor: pointer;
+}
+
+#video, #video-mobile{
+    position: absolute;
+    z-index: 1000;
+    top: 145px;
+    right: 0px;
+    display: none;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.77);
+
+}
+
+#video-mobile{
+    position: relative;
+    top: 110px;
+    display: none;
+    padding: 10px;
+}
